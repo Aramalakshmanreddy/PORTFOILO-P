@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background: blue;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: beige;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: black;
+    transition: .5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 100px){
+    label.logo{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 8px;
+
+    }
+}
+@media (max-width: 100px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+.bg{
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+ section h1{
+    text-align: center;
+    padding-top: 20%;
+    color: aqua;
+}
+img{
+    border: 2px solid rgb(169, 243, 179);
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+div h1{
+    text-align: center;
+    color: aqua;
+    padding-top: 4%;
+}
+
+.edu{
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    color: rgb(201, 245, 150);
+    height: 200px;
+}
+table, td, th{
+    
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: rgb(243, 170, 200);
+}
+
+
+.ski{
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    color:rgb(201, 245, 150);
+    text-align: center;
+}
+li{
+    padding-top: 1%;
+}
+
+
+.pro{
+    margin-left: auto;
+    margin-right: auto;
+}
+.first {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+
+.second {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+.third {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+
+.abo{
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(201, 245, 150);
+    text-align: center;
+}
+ 

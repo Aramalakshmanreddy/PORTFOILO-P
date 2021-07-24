@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>NAVBAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background: blue;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: beige;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: black;
+    transition: .5s;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: aliceblue;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 100px){
+    label.logo{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 8px;
+
+    }
+}
+@media (max-width: 100px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+.bg{
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+ section h1{
+    text-align: center;
+    padding-top: 20%;
+    color: aqua;
+}
+img{
+    border: 2px solid rgb(169, 243, 179);
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+div h1{
+    text-align: center;
+    color: aqua;
+    padding-top: 4%;
+}
+
+.edu{
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    color: rgb(201, 245, 150);
+    height: 200px;
+}
+table, td, th{
+    
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: rgb(243, 170, 200);
+}
+
+
+.ski{
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    color:rgb(201, 245, 150);
+    text-align: center;
+}
+li{
+    padding-top: 1%;
+}
+
+
+.pro{
+    margin-left: auto;
+    margin-right: auto;
+}
+.first {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+
+.second {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+.third {
+    color:rgb(201, 245, 150) ;
+    text-align: center;
+    background-image: url(1.jpg)
+}
+
+.abo{
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(201, 245, 150);
+    text-align: center;
+}
+</style>
+</head>
+<body bgcolor="black">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label 
+        class="logo">
+                RAMALAKSHMANREDDY
+        </label>
+        <ul>
+
+            <li><a class="active" href="#education">education</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#About">about</a></li>
+        </ul>
+    </nav>
+<section class="bg">
+         <h1>ANNAPAREDDYRAMALAKSHMANREDDY</h1>
+         <img src="ram.jpg">
+</section>
+<section id="education" >
+   <div>
+       <h1>EDUCATION</h1>
+   </div>
+   <br>
+   <table class="edu">
+    <tr>
+      <th>Year</th>
+      <th>Degree</th>
+      <th>Institute</th>
+      <th>Gpa/Percentage</th>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>B.Tech (Electronics & Comm. Engg.)</td>
+      <td>Graphic Era University</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>2016-18</td>
+      <td>XII(BIEAP)</td>
+      <td>Sri Vyshnavi Junior college</td>
+      <td>94.8</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>X(SSCAP)</td>
+      <td>Bhashyam High School</td>
+      <td>9.0</td>
+    </tr>
+   </table>
+</section>
+
+<section id="skills">
+    <div>
+        <h1>SKILLS</h1>
+    </div>
+    <br>
+    <div class ="ski">
+        <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>PYTHON</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>GAME DESIGNING</li>
+         </ul>
+    </div>
+</section>
+
+
+<section id="projects">
+    <div>
+        <h1>PROJECTS</h1>
+    </div>
+    <br>
+    <div class="pro">
+        <div class="first">
+        <h2>PORTFOLIO<br>
+        <p>Designed a website using HTML and CSS. The website contains the details of RAMALAKSHMANREDDY like about me,portfolio, contacts, skills, role of responsibilities, projects and workshops.In this I used html to write description and css for styling the description and I hosted the website.When we open the website it look like an online resume contains all details.</p>
+        </h2>
+        </div>
+        <br>
+        <br>
+        <div class="second">
+        <h2> PLANETSHOOTER <p>The planet shooter is a 2D game,which we used unity software for designing part and visual studio for code part.
+          In This game we have created aircraft and planets,where the aircraft shoots the planets revolve around the aircraft.</p></h2>
+        </div>
+        <br>
+        <br>
+        <div class="third">
+      <h2>KIDDYBALLRUNNER <P>The Kiddy Ball Runner is a 3D game,which we used unity software for designing part and visual studio for code part.
+      In this game we have created a Track,Roller,Coins,and Boxes in middle,where the roller rolls on the track,in middle
+      there is coins and enemies(Boxes) .
+      kiddy ball runner is 3d endless video game,where user used to control the roller to escape from the enemeis(boxer).</P></h2>
+        </div> </div>
+
+</section>
+<section id="gallery">
+    <div>
+        <h1>GALLERY</h1>
+    </div>
+    <img src="ram.jpg">
+    <img src="ram.jpg">
+    <img src="ram.jpg">
+</section>
+
+<section id="About">
+   <div>
+       <h1>ABOUT</h1>
+   </div>
+   <br>
+   <div class="abo">
+    <h3>Contact info</h3><br>
+       <div class="text">
+           <h3>Address</h3>
+               <p>H. No 7-143, Chagantivari Palem<br> Guntur<br> 522408<br> Andhra Pradesh<br> India.</p>
+        </div><br>
+        <div class="text">
+            <h3>phone number</h3>
+             <p>8187026982/9381584313</p>
+        </div><br>
+        <div class="text">
+            <h3>email</h3>
+            <p>ramalakshmanreddy2001@gmail.com</p>
+       </div>
+     </div>
+</section>
+<br>
+<br>
+
+    
+
+</body>
+</html>
